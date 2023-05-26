@@ -177,3 +177,8 @@ padding-right: 20px ;
 .product-small-img :hover{
   transform: scale(1.2);
 }
+
+.boton :hover{
+  transform: none;
+}
+

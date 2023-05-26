@@ -1,6 +1,6 @@
 .carrusel-items{
     display: flex;
-    margin-block-start: 220px;
+    margin-block-start: 20px;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 30px 0px;
