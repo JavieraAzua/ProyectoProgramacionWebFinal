@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACTO | TALLER MECÁNICO RAPIDOS & FURIOSOS</title>
-    <link rel="stylesheet" href="stylocontacto.css">
-    <link rel="stylesheet" href="style-inicio.css">
+    <title>PROMOCIONES | TALLER MECÁNICO RAPIDOS & FURIOSOS</title>
+    <link rel="stylesheet" href="css/style-inicio.css">
+    <link rel="stylesheet" href="css/style-promociones.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    
 
     <!-- Font Awesome -->
     <link
@@ -24,13 +25,21 @@
     rel="stylesheet"
     />
     <!-- MDB -->
+    <link rel="stylesheet" href="css/carga.css">
 
-        
-        
+
+
 </head>
 <body>
-    <!--      AQUI VA EL MENU      -->
+
+  <div id="contenedor_carga">
+    <div id="carga"></div>
+  </div>
+    
+<!--      AQUI VA EL MENU      -->
+
 <header>
+
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"></a>
@@ -54,11 +63,15 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    <a class="nav-link" href="suscribirse.html">SUSCRIBIRSE</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="file:///C:/Users/javia/OneDrive/Escritorio/Proyecto%20Taller%20Mecanico%20Seba-Javi/Pagina/Inicio.html#quienes-somos" >SOBRE NOSOTROS</a>
+                  <a class="nav-link" href="promociones.html">PROMOCIONES</a>
+              </li>
+
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="Inicio.html" >SOBRE NOSOTROS</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -68,51 +81,44 @@
           </div>
         </div>
     </nav>
+
 </header>
 
+<!-- AQUI VA EL CARRUSEL DE PROMOCIONES -->
 
-   <form class="contacto-form" action="">
-        <h2>CONTACTO</h2>
-        <p>Ingresa tus datos en el siguiente formulario y presiona el botón enviar. Te contactaremos a la brevedad.</p>
-        <div class="row mb-1">
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form6Example1" class="form-control"
-                name="Nombre" placeholder="Nombre*" />
-              </div>
-            </div>
-            <div class="col" >
-              <div class="form-outline">
-                <input type="text" id="form6Example1" class="form-control"
-                name="Apellido" placeholder="Apellido*" />
-              </div>
-            </div>
+
+  <h5>PROMOCIONES DEL MES</h5>
+
+
+<div class="carrusel">
+    <div class="carrusel-items">
+        <div class="carrusel-item">
+            <img src="Imagenes/formas_pago.png" alt="">
         </div>
-            <div class="form-outline mb-4">
-                <input type="text" id="form6Example1" class="form-control"
-                    name="Teléfono" placeholder="Teléfono*" />
-            </div>
-
-            <div class="form-outline mb-4">
-                <input type="text" id="form6Example1" class="form-control"
-                    name="Email" placeholder="Email*" />
-            </div>
-
-            <div class="form-outline mb-4">
-                <input type="text" id="form6Example1" class="form-control"
-                    name="Dirección" placeholder="Dirección*" />
-            </div>
-
-            <div class="form-outline mb-3">
-                <textarea class="form-control" id="form6Example7" rows="3"
-                 name="Mensaje" placeholder="Escríbenos ..."></textarea>
-            </div>
-        <input type="submit" id="boton-enviar" class="btn" style="background-color: gray; color: rgba(0, 0, 0, 0.8);" value="ENVIAR" id="boton">
-   </form>
+        <div class="carrusel-item">
+           <img src="Imagenes/planes.png" alt="">
+        </div>
+        <div class="carrusel-item">
+           <img src="Imagenes/cyber_week.png" alt="">
+        </div>
+        <div class="carrusel-item">
+            <img src="Imagenes/formas_pago.png" alt="">
+        </div>
+        <div class="carrusel-item">
+            <img src="Imagenes/planes.png" alt="">
+        </div>
+        <div class="carrusel-item">
+             <img src="Imagenes/cyber_week.png" alt="">
+        </div>
+    </div>
+</div>
 
 
-   
-   <footer class="bg-light text-center text-white" id="footer" style="margin-top: 200px;">
+
+
+<!-- AQUI VA EL FOOTER -->
+
+<footer class="bg-light text-center text-white" id="footer" style="margin-top: 200px;">
     <!-- Grid container -->
     <div class="container p-2 pb-0">
       <!-- Section: Social media -->
@@ -182,7 +188,21 @@
     <!-- Copyright -->
   </footer>
 
-   
-    
+
+
+  <script src="js/promociones.js"></script>
+
+  <script>
+    window.onload = function(){
+      var contenedor = document.getElementById('contenedor_carga')
+      contenedor.style.visibility='hidden';
+      contenedor.style.opacity = 0;
+    }
+  </script>
+
+
+
+
+
 </body>
 </html>

@@ -25,7 +25,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right,rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url(imagenes/encabeza.jpg);
+    background: linear-gradient(to right,rgb(0 0 0 / .5),rgb(0 0 0 / .5));
     background-size: cover;
     object-fit: cover;
 }
